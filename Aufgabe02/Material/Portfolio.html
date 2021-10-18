@@ -16,11 +16,11 @@
     img {display: block; width: 100%;}
 
 * {box-sizing: border-box;}
-.column {flex: 25%; padding: 0 4px;}
-.column img {margin-top: 8px;}
-.row {display: flex;}
+.spalte {flex: 25%; padding: 0 4px;}
+.spalte img {margin-top: 8px;}
+.reihe {display: flex;}
 
-.Knopf {
+.knopf {
   border: none;
   outline: none;
   padding: 10px 16px;
@@ -29,9 +29,9 @@
   font-size: 35px;
   color: rgb(228, 136, 32);
   }
-.Knopf:hover {background-color: rgb(30, 30, 30);}
-.Knopf.Gedrückt {background-color: rgb(20, 20, 20); color: rgb(82, 169, 226);}
-.Knopfanordnung {text-align: center; padding: 50px;}
+.knopf.hovern {background-color: rgb(30, 30, 30);}
+.knopf.gedrückt {background-color: rgb(20, 20, 20); color: rgb(82, 169, 226);}
+.anordnungknopf {text-align: center; padding: 50px;}
 
 </style>
 
@@ -39,15 +39,15 @@
 
 <body>
 
-<div class="Knopfanordnung" id="Zentrierung">
-  <button class="Knopf" onclick="window.location.href='../Material/Aboutme.html'">About Me</button>
-  <button class="Knopf Gedrückt" onclick="window.location.href='../Material/Portfolio.html'">Portfolio</button>
-  <button class="Knopf" onclick="window.location.href='../Material/Contact.html'">Contact</button>
+<div class="anordnungknopf" id="Zentrierung">
+  <button class="knopf" onclick="window.location.href='../Material/Aboutme.html'"><b>About Me</b></button>
+  <button class="knopf gedrückt" onclick="window.location.href='../Material/Portfolio.html'"><b>Portfolio</b></button>
+  <button class="knopf" onclick="window.location.href='../Material/Contact.html'"><b>Contact</b></button>
 </div>
 
-<div class="row">
+<div class="reihe">
 
-  <div class="column">
+  <div class="spalte">
     <!--17--><a href="Portfolio/Transparent.jpg"><img src="Portfolio/Transparent.jpg" alt="Hazmate Heimerdinger"></a>
     <!--16--><a href="Portfolio/Preise.jpg"><img src="Portfolio/Preise.jpg" alt="Solaire"></a>
     <!--5--><a href="Portfolio/JUDJ.jpg"><img src="Portfolio/JUDJ.jpg" alt="Judgment"></a>
@@ -55,14 +55,14 @@
     <!--4--><a href="Portfolio/AlienF.jpg"><img src="Portfolio/AlienF.jpg" alt="Alien"></a>
   </div>
 
-  <div class="column">
+  <div class="spalte">
     <!--14--><a href="Portfolio/Animeroom.jpg"><img src="Portfolio/Animeroom.jpg" alt="Animesytel Room"></a>
     <!--13--><a href="Portfolio/Handy.jpg"><img src="Portfolio/Handy.jpg" alt="Corona"></a>
     <!--12--><a href="Portfolio/Angle.jpg"><img src="Portfolio/Angle.jpg" alt="Engel"></a>
     <!--11--><a href="Portfolio/Ball3.jpg"><img src="Portfolio/Ball3.jpg" alt="Ball"></a>
   </div>
 
-  <div class="column">
+  <div class="spalte">
     <!--9--><a href="Portfolio/Tower.jpg"><img src="Portfolio/Tower.jpg" alt="Tower"></a>
     <!--8--><a href="Portfolio/Blitz.jpg"><img src="Portfolio/Blitz.jpg" alt="Roboter"></a>
     <!--7--><a href="Portfolio/Final1.jpg"><img src="Portfolio/Final1.jpg" alt="Rezone Raum"></a>
@@ -70,7 +70,7 @@
     <!--15--><a href="Portfolio/Fertig1.jpg"><img src="Portfolio/Fertig1.jpg" alt="Nebelniek"></a>
   </div>
 
-  <div class="column">
+  <div class="spalte">
     <!--10--><a href="Portfolio/Spaceruum.jpg"><img src="Portfolio/Spaceruum.jpg" alt="Space Raum"></a>
     <!--3--><a href="Portfolio/Code Geas.jpg"><img src="Portfolio/Code Geas.jpg" alt="Code Geas"></a>
     <!--2--><a href="Portfolio/1.jpg"><img src="Portfolio/1.jpg" alt="NieR:Automata"></a>
