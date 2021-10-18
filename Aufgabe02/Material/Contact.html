@@ -14,15 +14,44 @@
             background-color: rgb(20, 20, 20);                                                  
             color: white;                                                                     
             font-family: monospace;
+            overflow-y: scroll;
             }
+    
+            .Knopf {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: rgb(20, 20, 20);
+  cursor: pointer;
+  font-size: 35px;
+  color: rgb(228, 136, 32);
+
+}
+
+.Knopf:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+.Knopf.Gedrückt {
+  background-color: rgb(20, 20, 20);
+  color: rgb(82, 169, 226);
+}
+
+.Knopfanordnung {
+  text-align: center;
+  padding: 50px;
+}
+
 </style>
 
 </head>
 <body>
 
-    <a href="../Material/Aboutme.html"><h3>About Me</h3></a>
-    <a href="../Material/Portfolio.html"><h3>Portfolio</h3></a>
-    <a href="../Material/Contact.html"><h1>Contact</h1></a> </p>
+  <div class="Knopfanordnung" id="Zentrierung">
+  <button class="Knopf" onclick="window.location.href='../Material/Aboutme.html'">About Me</button>
+  <button class="Knopf " onclick="window.location.href='../Material/Portfolio.html'">Portfolio</button>
+  <button class="Knopf Gedrückt" onclick="window.location.href='../Material/Contact.html'">Contact</button>
+  </div>
 
     <h4>
         <p>Mail:  Silvan.Jona.Woschny@hs-furtwangen.de</p>
