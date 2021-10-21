@@ -1,0 +1,28 @@
+/* Darkmode */
+body {        
+    background-color: rgb(20, 20, 20);
+    font-family: monospace;
+    overflow-y: scroll;                                                                                                                  
+  }
+
+/* Bildanordnung */
+img {display: block; width: 100%;}
+
+* {box-sizing: border-box;}
+.spalte {flex: 25%; padding: 0 4px;}
+.spalte img {margin-top: 8px;}
+.reihe {display: flex;}
+
+/* Knopfdesign */
+.knopf {
+border: none;
+outline: none;
+padding: 10px 100px;
+background-color: rgb(20, 20, 20);
+cursor: pointer;
+font-size: 35px;
+color: rgb(228, 136, 32);
+}
+.knopf:hover {background-color: rgb(30, 30, 30);}
+.knopf.gedrückt {background-color: rgb(20, 20, 20); color: rgb(82, 169, 226);}
+.anordnungknopf {text-align: center; padding: 50px;}
