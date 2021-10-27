@@ -1,5 +1,5 @@
 body {font-family: sans-serif;
-      background-image: url("/Aufgabe03/task_material/hintergrund/bg.png");
+      background-image: url("../Aufgabe03/task_material/hintergrund/bg.png");
       overflow-y: scroll;
 }
 
@@ -22,13 +22,13 @@ body {font-family: sans-serif;
 }
 
 #box p {
-background-image: url("/Aufgabe03/task_material/hintergrund/bg.png");
+background-image: url("../Aufgabe03/task_material/hintergrund/bg.png");
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 
 #box2 p{
-background-image: url("/Aufgabe03/task_material/hintergrund/bg.png");
+background-image: url("../Aufgabe03/task_material/hintergrund/bg.png");
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 text-align: center;
@@ -38,7 +38,7 @@ margin: -400px 0px 10px 320px;
 }
 
 #box3 p{
-background-image: url("/Aufgabe03/task_material/hintergrund/bg.png");
+background-image: url("../Aufgabe03/task_material/hintergrund/bg.png");
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 text-align: left;
@@ -47,7 +47,7 @@ font-weight: 800;
 margin: 0px 0px 250px 895px;
 }
 
-img[src="/Aufgabe03/task_material/hintergrund/icon_facebook.png"]{
+img[src="../Aufgabe03/task_material/hintergrund/icon_facebook.png"]{
   display: block; width: 30px;
   position: absolute;
   left: 902px;
