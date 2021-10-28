@@ -1,8 +1,11 @@
+/* Schriftart und Hintergrund + Scrollbar Force */
+
 body {font-family: sans-serif;
       background-image: url("../Aufgabe03/task_material/hintergrund/bg.png");
       overflow-y: scroll;
 }
 
+/* Orangener Kreis und portfolio Titel */  
 
   #box{
     background-color: #B63514;
@@ -21,11 +24,15 @@ body {font-family: sans-serif;
     margin-right: auto;
 }
 
+/* Hintergrundtextur für Portfolio Titel */
+
 #box p {
 background-image: url("../Aufgabe03/task_material/hintergrund/bg.png");
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+
+/* Hintergrundtextur Überschrift und Formatierung bzw. Größe */
 
 #box2 p{
 background-image: url("../Aufgabe03/task_material/hintergrund/bg.png");
@@ -37,6 +44,8 @@ font-weight: 800;
 margin: -400px 0px 10px 320px;
 }
 
+/* Hintergrundtextur Text und Formatierung bzw. Größe */
+
 #box3 p{
 background-image: url("../Aufgabe03/task_material/hintergrund/bg.png");
 -webkit-background-clip: text;
@@ -47,6 +56,8 @@ font-weight: 800;
 margin: 0px 0px 250px 895px;
 }
 
+/* Größe und Position Facebook Logo */
+
 img[src="../Aufgabe03/task_material/hintergrund/icon_facebook.png"]{
   display: block; width: 30px;
   position: absolute;
@@ -54,9 +65,12 @@ img[src="../Aufgabe03/task_material/hintergrund/icon_facebook.png"]{
   top: 420px;
 }
 
+/* Visuelles Feedback Facebook Logo */
+
 .sichtbarkeit {opacity: 50%; cursor: pointer;}
 .sichtbarkeit:hover {opacity: 100%;}
 
+/* Formatierung und Breite Videos und Bilder */
 
 img, video{
     display: block; width: 800px;
@@ -65,6 +79,7 @@ img, video{
     padding: 0px 0px 5px;
  }
 
+ /* Formatierung und Aussehen Texte (über Bilder und Videos) */
 
 h3{
   text-align: left; 
@@ -72,6 +87,8 @@ h3{
     font-size: 25px;
     color: #B63514;
 }
+
+/* Knopfdesign */
 
 * {box-sizing: content-box;}
 .knopf {
@@ -85,9 +102,13 @@ h3{
   margin: 0px -2.5px;
   }
 
+/* Knopf Visuelles Feedback */
+
 .knopf:hover {background-color: rgb(116, 116, 116);}
 .knopf.gedrückt {background-color: rgb(0, 0, 0); color: rgb(255, 153, 0);}
 .anordnungknopf {text-align: right; padding: 0px 60px 0px 0px;}
+
+/* Formatierung Eingabefelder von Contact Page */
 
 .eingabe{
   position: absolute;
