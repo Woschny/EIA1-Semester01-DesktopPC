@@ -114,3 +114,40 @@ h3{
   position: absolute;
   left: 535px;
 }
+
+/* Design Eingabefelder */
+
+input {
+background-color: lightgray;
+width: 300px;
+height: 25px;
+border: none;
+padding: 3px;
+margin: 10px;
+}
+
+/* Nachrichten Feld */
+
+textarea {
+background-color: lightgray;
+width: 300px;
+height: 25px;
+border: none;
+padding: 3px;
+margin: 10px;
+}
+
+/* Abstand zum Button */
+
+main button{
+margin-bottom: 200px;
+}
+
+/* Text in Eingabefeldern */
+
+::placeholder{
+color: white;
+font-size: 18px;
+font-family: sans-serif;
+font-weight: 100;
+}
