@@ -32,6 +32,17 @@ background-image: url("../Aufgabe03/task_material/hintergrund/bg.png");
 -webkit-text-fill-color: transparent;
 }
 
+/* Pferdeicon */
+
+#box img {
+  width: 135px;
+  margin-left: 100px;
+  margin-top: -80px;
+  }
+
+
+
+
 /* Hintergrundtextur Überschrift und Formatierung bzw. Größe */
 
 #box2 p{
