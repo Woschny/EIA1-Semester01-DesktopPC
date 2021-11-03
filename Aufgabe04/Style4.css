@@ -1,0 +1,55 @@
+
+/* Hintergrund */  
+
+body {
+    background-image: url("../Aufgabe04/Station_4_Fonts/images/bg.png");
+}
+
+header {position: absolute;
+    right: 5px;
+    top: 5px;
+    
+}
+
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: lightblue;
+    padding: 1px 4px 1px 4px;
+    border-radius: 5px;
+    border: 1px;
+}
+
+/* Positionierung des Containers */
+
+.Karte{
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+margin-top: 250px;
+}
+
+/* Positionierung der Kartenbasis */
+
+.Pink {
+    position: absolute;
+    top: 0px;
+}
+
+/* Positionierung, Farbe, Font und Größe des Textes */
+
+.Text {
+    position: relative;
+    top: 80px;
+    left: 60px;
+    z-index: 2;
+    color: white;
+    font-family:"Pinyon Script","Parisienne","Dancing Script","Tangerine";
+    font-size: 20px;
+}
+
+h1{font-size: 80px;}

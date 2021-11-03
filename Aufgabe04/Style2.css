@@ -1,0 +1,53 @@
+
+/* Hintergrund */  
+
+body {
+    background-image: url("../Aufgabe04/Station_2_Background_Images/images/bg.png");
+}
+
+/* Navigationsleiste */
+
+header {position: absolute;
+        right: 5px;
+        top: 5px;
+        
+}
+
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: lightblue;
+    padding: 1px 4px 1px 4px;
+    border-radius: 5px;
+    border: 1px;
+}
+
+/* Positionierung des Containers */
+
+.Karte{
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+margin-top: 250px;
+}
+
+/* Positionierung der Kartenbasis */
+
+.Blau {
+    position: absolute;
+    top: 0px;
+}
+
+/* Positionierung und Farbe des Textes */
+
+.Text {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+    color: white;
+}

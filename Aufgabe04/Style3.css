@@ -1,0 +1,111 @@
+
+/* Hintergrund */  
+
+body {
+    background-image: url("../Aufgabe04/Station_3_Hover/images/bg.png");
+}
+
+/* Navigationsleiste */
+
+header {position: absolute;
+    right: 5px;
+    top: 5px;
+    
+}
+
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: lightblue;
+    padding: 1px 4px 1px 4px;
+    border-radius: 5px;
+    border: 1px;
+}
+
+/* Positionierung des Containers */
+
+.Karte{
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width: 600px;
+margin-top: 250px;
+}
+
+/* Positionierung der Kartenbasis */
+
+.Blau {
+    position: absolute;
+    top: 0px;
+}
+
+/* Positionierung der Sterne und Hover Ereignis mit Sichtbarkeitsänderung von Stern 1 bis 4 */
+
+/* Stern1 */
+
+.Stern_aus1, .Stern_an1{
+    position: absolute;
+    top: 200px;
+    left: 170px;
+}
+.Stern_an1 {
+    opacity: 0%;
+}
+.Stern_an1:hover{
+    opacity: 100%;
+}
+
+/* Stern2 */
+
+.Stern_aus2, .Stern_an2{
+    position: absolute;
+    top: 190px;
+    left: 450px;
+}
+.Stern_an2 {
+    opacity: 0%;
+}
+.Stern_an2:hover{
+    opacity: 100%;
+}
+
+/* Stern3 */
+
+.Stern_aus3, .Stern_an3{
+    position: absolute;
+    top: 260px;
+    left: 300px;
+}
+.Stern_an3 {
+    opacity: 0%;
+}
+.Stern_an3:hover{
+    opacity: 100%;
+}
+
+/* Stern4 */
+
+.Stern_aus4, .Stern_an4{
+    position: absolute;
+    top: 270px;
+    left: 50px;
+}
+.Stern_an4 {
+    opacity: 0%;
+}
+.Stern_an4:hover{
+    opacity: 100%;
+}
+
+/* Positionierung und Farbe des Textes */
+
+.Text {
+    position: relative;
+    top: 100px;
+    left: 60px;
+    z-index: 2;
+    color: white;
+}
