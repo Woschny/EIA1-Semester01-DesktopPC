@@ -1,3 +1,32 @@
+/* Text Variablen */
+
+var absatz0 : string = " Die Welt Produziert ";
+var absatz1 : string = " Die Emission von " ;
+var absatz2 : string = "Relativ zur Gesamtemission der Welt verursacht " ;
+var absatz3 : string = "Für " ;
+var absatz4 : string = "2018 im Vergleich zu 2008 sind das " ;
+
+var anhang1a : string = " ist: " ;
+var anhang1b : string = "kg CO²." ;
+
+var anhang2a : string = " damit " ;
+var anhang2b : string = "%." ;
+
+var anhang3a : string = " hat sich 2018 im Vergleich zu 2008 die Emission um " ;
+var anhang3b : string = "% verändert." ;
+
+/* Länder Text Variablen */
+
+var aus : string = "Australien" ;
+var as : string = "Asien" ;
+var na : string = "Nord-Amerika" ;
+var eu : string = "Europa" ;
+var sa : string = "Süd-Amerika" ;
+var af : string = "Afrika" ;
+
+
+/* ----------------------------------------------------- */
+
 
 /* Australien Variablen */
 
@@ -30,6 +59,7 @@ var af08 : number = 1028;
 var af18 : number = 1235.5;
 
 
+/* ----------------------------------------------------- */
 
 
 /* Welt Gesamt Rechnung */
@@ -71,50 +101,55 @@ var sazusaco: number = sa18-sa08;
 var auszuwelt : number = aus18/welt18*100;
 var auszuaus : number = (aus18/aus08-1)*100;
 var auszuausco: number = aus18-aus08;
+
+
+/* ----------------------------------------------------- */
+
+
 /* Consolenoutput */
 
 console.log(
-" Die Emission von Europa ist:",eu18.toFixed(2),"kg CO2.",'\n',
-"Relativ zur Gesamtemission der Welt verursacht Europa damit",euzuwelt.toFixed(2),"%.",'\n',
-"Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um",euzueu.toFixed(2),"% verändert.",'\n',
-"2018 im Vergleich zu 2008 sind das",euzueuco.toFixed(2),"kg CO2."
+absatz0 + welt18.toFixed(0) + anhang1b
 );
 
 console.log(
-" Die Emission von Asien ist:",as18.toFixed(2),"kg CO2.",'\n',
-"Relativ zur Gesamtemission der Welt verursacht Asien damit",aszuwelt.toFixed(2),"%.",'\n',
-"Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um",aszuas.toFixed(2),"% verändert.",'\n',
-"2018 im Vergleich zu 2008 sind das",aszuasco.toFixed(2),"kg CO2."
+absatz1 + eu + anhang1a + eu18.toFixed(2) + anhang1b ,'\n',
+absatz2 + eu + anhang2a + euzuwelt.toFixed(2) + anhang2b ,'\n',
+absatz3 + eu + anhang3a + euzueu.toFixed(2) + anhang3b ,'\n',
+absatz4 + euzueuco.toFixed(2) + anhang1b
 );
 
 console.log(
-" Die Emission von Afrika ist:",af18.toFixed(2),"kg CO2.",'\n',
-"Relativ zur Gesamtemission der Welt verursacht Afrika damit",afzuwelt.toFixed(2),"%.",'\n',
-"Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um",afzuaf.toFixed(2),"% verändert.",'\n',
-"2018 im Vergleich zu 2008 sind das",afzuafco.toFixed(2),"kg CO2."
+absatz1 + as + anhang1a + as18.toFixed(2) + anhang1b ,'\n',
+absatz2 + as + anhang2a + aszuwelt.toFixed(2) + anhang2b ,'\n',
+absatz3 + as + anhang3a + aszuas.toFixed(2) + anhang3b ,'\n',
+absatz4 + aszuasco.toFixed(2) + anhang1b
 );
 
 console.log(
-" Die Emission von Nord Amerika ist:",na18.toFixed(2),"kg CO2.",'\n',
-"Relativ zur Gesamtemission der Welt verursacht Nord Amerika damit",nazuwelt.toFixed(2),"%.",'\n',
-"Für Nord Amerika hat sich 2018 im Vergleich zu 2008 die Emission um",nazuna.toFixed(2),"% verändert.",'\n',
-"2018 im Vergleich zu 2008 sind das",nazunaco.toFixed(2),"kg CO2."
+absatz1 + af + anhang1a + af18.toFixed(2) + anhang1b ,'\n',
+absatz2 + af + anhang2a + afzuwelt.toFixed(2) + anhang2b ,'\n',
+absatz3 + af + anhang3a + afzuaf.toFixed(2) + anhang3b ,'\n',
+absatz4 + afzuafco.toFixed(2) + anhang1b
 );
 
 console.log(
-" Die Emission von Süd Amerika ist:",sa18.toFixed(2),"kg CO2.",'\n',
-"Relativ zur Gesamtemission der Welt verursacht Süd Amerika damit",sazuwelt.toFixed(2),"%.",'\n',
-"Für Süd Amerika hat sich 2018 im Vergleich zu 2008 die Emission um",sazusa.toFixed(2),"% verändert.",'\n',
-"2018 im Vergleich zu 2008 sind das",sazusaco.toFixed(2),"kg CO2."
+absatz1 + na + anhang1a + na18.toFixed(2) + anhang1b ,'\n',
+absatz2 + na + anhang2a + nazuwelt.toFixed(2) + anhang2b ,'\n',
+absatz3 + na + anhang3a + nazuna.toFixed(2) + anhang3b ,'\n',
+absatz4 + nazunaco.toFixed(2) + anhang1b
 );
 
 console.log(
-" Die Emission von Australien ist:",aus18.toFixed(2),"kg CO2.",'\n',
-"Relativ zur Gesamtemission der Welt verursacht Australien damit",auszuwelt.toFixed(2),"%.",'\n',
-"Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um",auszuaus.toFixed(2),"% verändert.",'\n',
-"2018 im Vergleich zu 2008 sind das",auszuausco.toFixed(2),"kg CO2."
+absatz1 + sa + anhang1a + sa18.toFixed(2) + anhang1b ,'\n',
+absatz2 + sa + anhang2a + sazuwelt.toFixed(2) + anhang2b ,'\n',
+absatz3 + sa + anhang3a + sazusa.toFixed(2) + anhang3b ,'\n',
+absatz4 + sazusaco.toFixed(2) + anhang1b
 );
 
 console.log(
-" Die Welt Produziert",welt18.toFixed(2)
+absatz1 + aus + anhang1a + aus18.toFixed(2) + anhang1b ,'\n',
+absatz2 + aus + anhang2a + auszuwelt.toFixed(2) + anhang2b ,'\n',
+absatz3 + aus + anhang3a + auszuaus.toFixed(2) + anhang3b ,'\n',
+absatz4 + auszuausco.toFixed(2) + anhang1b
 );

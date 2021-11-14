@@ -85,3 +85,46 @@ var Welt16 : number = Afrika16+SAmerika16+Europa16+NAmerika16+Asien16+Australien
 var Welt17 : number = Afrika17+SAmerika17+Europa17+NAmerika17+Asien17+Australien17;
 var Welt18 : number = Afrika18+SAmerika18+Europa18+NAmerika18+Asien18+Australien18;
 
+Console V1
+console.log(
+" Die Emission von Europa ist:",eu18.toFixed(2),"kg CO2.",'\n',
+"Relativ zur Gesamtemission der Welt verursacht Europa damit",euzuwelt.toFixed(2),"%.",'\n',
+"Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um",euzueu.toFixed(2),"% verändert.",'\n',
+"2018 im Vergleich zu 2008 sind das",euzueuco.toFixed(2),"kg CO2."
+);
+
+console.log(
+" Die Emission von Asien ist:",as18.toFixed(2),"kg CO2.",'\n',
+"Relativ zur Gesamtemission der Welt verursacht Asien damit",aszuwelt.toFixed(2),"%.",'\n',
+"Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um",aszuas.toFixed(2),"% verändert.",'\n',
+"2018 im Vergleich zu 2008 sind das",aszuasco.toFixed(2),"kg CO2."
+);
+
+console.log(
+" Die Emission von Afrika ist:",af18.toFixed(2),"kg CO2.",'\n',
+"Relativ zur Gesamtemission der Welt verursacht Afrika damit",afzuwelt.toFixed(2),"%.",'\n',
+"Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um",afzuaf.toFixed(2),"% verändert.",'\n',
+"2018 im Vergleich zu 2008 sind das",afzuafco.toFixed(2),"kg CO2."
+);
+
+console.log(
+" Die Emission von Nord Amerika ist:",na18.toFixed(2),"kg CO2.",'\n',
+"Relativ zur Gesamtemission der Welt verursacht Nord Amerika damit",nazuwelt.toFixed(2),"%.",'\n',
+"Für Nord Amerika hat sich 2018 im Vergleich zu 2008 die Emission um",nazuna.toFixed(2),"% verändert.",'\n',
+"2018 im Vergleich zu 2008 sind das",nazunaco.toFixed(2),"kg CO2."
+);
+
+console.log(
+" Die Emission von Süd Amerika ist:",sa18.toFixed(2),"kg CO2.",'\n',
+"Relativ zur Gesamtemission der Welt verursacht Süd Amerika damit",sazuwelt.toFixed(2),"%.",'\n',
+"Für Süd Amerika hat sich 2018 im Vergleich zu 2008 die Emission um",sazusa.toFixed(2),"% verändert.",'\n',
+"2018 im Vergleich zu 2008 sind das",sazusaco.toFixed(2),"kg CO2."
+);
+
+console.log(
+" Die Emission von Australien ist:",aus18.toFixed(2),"kg CO2.",'\n',
+"Relativ zur Gesamtemission der Welt verursacht Australien damit",auszuwelt.toFixed(2),"%.",'\n',
+"Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um",auszuaus.toFixed(2),"% verändert.",'\n',
+"2018 im Vergleich zu 2008 sind das",auszuausco.toFixed(2),"kg CO2."
+);
+
