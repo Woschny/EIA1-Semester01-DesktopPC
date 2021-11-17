@@ -61,7 +61,7 @@ window.addEventListener("load", function () {
     document.querySelector(".africa").addEventListener("click", function () { lander(af, af18, afzuwelt, afzuaf, afzuafco); });
     document.querySelector(".asia").addEventListener("click", function () { lander(as, as18, aszuwelt, aszuas, aszuasco); });
     document.querySelector(".australia").addEventListener("click", function () { lander(aus, aus18, auszuwelt, auszuaus, auszuausco); });
-    /* Funktion Europa */
+    /* Funktion Länder */
     function lander(land, land18, landzuwelt, landzuland, landzulandco) {
         document.querySelector(".emission").innerHTML = land18.toFixed(2);
         document.querySelector(".relative").innerHTML = landzuwelt.toFixed(2) + "%";
