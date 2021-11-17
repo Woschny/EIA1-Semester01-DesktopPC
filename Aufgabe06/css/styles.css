@@ -35,23 +35,6 @@ section {
     background: white;
 }
 
-.highchart {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 200%;
-    background: red;
-}
-
-.lowchart {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 200%;
-    background: blue;
-}
-
-
 footer p {
     margin-top: 50px;
     font-size: 10px;
