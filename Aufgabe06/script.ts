@@ -94,100 +94,27 @@ var auszuausco: number = aus18-aus08;
 
 /* Beim Klick auf die Klasse eines Landes wird die dazugehörige Funktion ausgeführt */
 
-document.querySelector(".europe").addEventListener("click", europa);
-document.querySelector(".northamerica").addEventListener("click", nordamerika);
-document.querySelector(".southamerica").addEventListener("click", suedamerika);
-document.querySelector(".africa").addEventListener("click", afrika);
-document.querySelector(".asia").addEventListener("click", asien);
-document.querySelector(".australia").addEventListener("click", australien);
+document.querySelector(".europe").addEventListener("click", function () {lander(eu, eu18, euzuwelt, euzueu, euzueuco);});
+document.querySelector(".northamerica").addEventListener("click", function () {lander(na, na18, nazuwelt, nazuna, nazunaco);});
+document.querySelector(".southamerica").addEventListener("click", function () {lander(sa, sa18, sazuwelt, sazusa, sazusaco);});
+document.querySelector(".africa").addEventListener("click", function () {lander(af, af18, afzuwelt, afzuaf, afzuafco);});
+document.querySelector(".asia").addEventListener("click", function () {lander(as, as18, aszuwelt, aszuas, aszuasco);});
+document.querySelector(".australia").addEventListener("click", function () {lander(aus, aus18, auszuwelt, auszuaus, auszuausco);});
 
 /* Funktion Europa */
 
-function europa() {
-document.querySelector(".emission").innerHTML = eu18.toFixed(2);
-document.querySelector(".relative").innerHTML = euzuwelt.toFixed(2);
-document.querySelector(".growth").innerHTML = euzueu.toFixed(2);
-document.querySelector(".growthrate").innerHTML = euzueuco.toFixed(2);
-document.querySelector("#titleRegion").innerHTML = eu;
-document.querySelector("#subtitleRegion").innerHTML = eu;
+function lander(land, land18, landzuwelt, landzuland, landzulandco) {
+document.querySelector(".emission").innerHTML = land18.toFixed(2);
+document.querySelector(".relative").innerHTML = landzuwelt.toFixed(2) + "%";
+document.querySelector(".growth").innerHTML = landzuland.toFixed(2) + "%";
+document.querySelector(".growthrate").innerHTML = landzulandco.toFixed(2);
+document.querySelector("#titleRegion").innerHTML = land;
+document.querySelector("#subtitleRegion").innerHTML = land;
 
 var Grafik:HTMLElement = document.querySelector(".chart")
-Grafik.style.height = euzuwelt + "px";
+Grafik.style.height = landzuwelt + "px";
 
 }
-
-/* Funktion Nord Amerika */
-
-function nordamerika() {
-document.querySelector(".emission").innerHTML = na18.toFixed(2);
-document.querySelector(".relative").innerHTML = nazuwelt.toFixed(2);
-document.querySelector(".growth").innerHTML = nazuna.toFixed(2);
-document.querySelector(".growthrate").innerHTML = nazunaco.toFixed(2);
-document.querySelector("#titleRegion").innerHTML = na;
-document.querySelector("#subtitleRegion").innerHTML = na;
-
-var Grafik:HTMLElement = document.querySelector(".chart")
-Grafik.style.height = nazuwelt + "px";
-}
-
-/* Funktion Süd Amerika */
-
-function suedamerika() {
-document.querySelector(".emission").innerHTML = sa18.toFixed(2);
-document.querySelector(".relative").innerHTML = sazuwelt.toFixed(2);
-document.querySelector(".growth").innerHTML = sazusa.toFixed(2);
-document.querySelector(".growthrate").innerHTML = sazusaco.toFixed(2);
-document.querySelector("#titleRegion").innerHTML = sa;
-document.querySelector("#subtitleRegion").innerHTML = sa;
-
-var Grafik:HTMLElement = document.querySelector(".chart")
-Grafik.style.height = sazuwelt + "px";
-}
-
-/* Funktion Afrika */
-
-function afrika() {
-document.querySelector(".emission").innerHTML = af18.toFixed(2);
-document.querySelector(".relative").innerHTML = afzuwelt.toFixed(2);
-document.querySelector(".growth").innerHTML = afzuaf.toFixed(2);
-document.querySelector(".growthrate").innerHTML = afzuafco.toFixed(2);
-document.querySelector("#titleRegion").innerHTML = af;
-document.querySelector("#subtitleRegion").innerHTML = af;
-
-var Grafik:HTMLElement = document.querySelector(".chart")
-Grafik.style.height = afzuwelt + "px";
-
-
-}
-
-/* Funktion Asien */
-
-function asien() {
-document.querySelector(".emission").innerHTML = as18.toFixed(2);
-document.querySelector(".relative").innerHTML = aszuwelt.toFixed(2);
-document.querySelector(".growth").innerHTML = aszuas.toFixed(2);
-document.querySelector(".growthrate").innerHTML = aszuasco.toFixed(2);
-document.querySelector("#titleRegion").innerHTML = as;
-document.querySelector("#subtitleRegion").innerHTML = as;
-
-var Grafik:HTMLElement = document.querySelector(".chart")
-Grafik.style.height = aszuwelt + "px";
-}
-
-/* Funktion Australien */
-
-function australien() {
-document.querySelector(".emission").innerHTML = aus18.toFixed(2);
-document.querySelector(".relative").innerHTML = auszuwelt.toFixed(2);
-document.querySelector(".growth").innerHTML = auszuaus.toFixed(2);
-document.querySelector(".growthrate").innerHTML = auszuausco.toFixed(2);
-document.querySelector("#titleRegion").innerHTML = aus;
-document.querySelector("#subtitleRegion").innerHTML = aus;
-
-var Grafik:HTMLElement = document.querySelector(".chart")
-Grafik.style.height = auszuwelt + "px";
-}
-
 
 /* Hier endet das oben angesprochene tolle Ding /(°-°)\ */
 
