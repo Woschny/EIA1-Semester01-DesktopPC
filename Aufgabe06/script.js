@@ -54,7 +54,7 @@ window.addEventListener("load", function () {
     var auszuwelt = aus18 / welt18 * 100;
     var auszuaus = (aus18 / aus08 - 1) * 100;
     var auszuausco = aus18 - aus08;
-    /* Beim Klick auf die Klasse eines Landes wird die dazugehörige Funktion ausgeführt */
+    /* Beim Klick auf die Klasse eines Landes wird die Funktion mit den dazugehörigen Variablen ausgeführt */
     document.querySelector(".europe").addEventListener("click", function () { lander(eu, eu18, euzuwelt, euzueu, euzueuco); });
     document.querySelector(".northamerica").addEventListener("click", function () { lander(na, na18, nazuwelt, nazuna, nazunaco); });
     document.querySelector(".southamerica").addEventListener("click", function () { lander(sa, sa18, sazuwelt, sazusa, sazusaco); });

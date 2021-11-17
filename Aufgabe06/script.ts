@@ -92,7 +92,7 @@ var auszuwelt : number = aus18/welt18*100;
 var auszuaus : number = (aus18/aus08-1)*100;
 var auszuausco: number = aus18-aus08;
 
-/* Beim Klick auf die Klasse eines Landes wird die dazugehörige Funktion ausgeführt */
+/* Beim Klick auf die Klasse eines Landes wird die Funktion mit den dazugehörigen Variablen ausgeführt */
 
 document.querySelector(".europe").addEventListener("click", function () {lander(eu, eu18, euzuwelt, euzueu, euzueuco);});
 document.querySelector(".northamerica").addEventListener("click", function () {lander(na, na18, nazuwelt, nazuna, nazunaco);});
