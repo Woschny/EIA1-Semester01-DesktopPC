@@ -113,7 +113,6 @@ document.querySelector("#subtitleRegion").innerHTML = land;
 
 var Grafik:HTMLElement = document.querySelector(".chart")
 Grafik.style.height = landzuwelt + "px";
-
 }
 
 /* Hier endet das oben angesprochene tolle Ding /(°-°)\ */

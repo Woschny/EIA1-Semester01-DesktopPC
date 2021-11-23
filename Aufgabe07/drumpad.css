@@ -1,0 +1,92 @@
+/* Body Hintergrundfarbe */
+
+body{
+background-color: #000;
+}
+
+/* Positioning Drum Set */
+
+.platz{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Positioning Playbutton */
+
+#playbutton{
+    position: absolute;
+    top: 117%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Knopf Spacing */
+
+#knopf{
+height: 150px;
+width: 150px;
+border: 1px;
+border-radius: 5px;
+float: left;
+margin: 2px;
+border-style: solid;
+}
+
+/* Style von pinken Knöpfen */
+
+.Ton #knopf {
+    background: linear-gradient(to top, #EE1EB5, #FBAFE3);
+    border-radius: 10px;
+    position: relative;
+}
+.Ton #knopf::before {
+    border-radius: 8px;
+    content: '';
+    background-image: linear-gradient(to bottom, #FF5BB0, #F0037E);
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Style von blauen Knöpfen */
+
+.Kit #knopf {
+    background: linear-gradient(to top, #337FED, #97C4FE);
+    border-radius: 10px;
+    position: relative;
+}
+.Kit #knopf::before {
+    border-radius: 8px;
+    content: '';
+    background-image: linear-gradient(to bottom, #3D93F6, #1F63D1);
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Style von orangenen Knöpfen */
+
+.Voice #knopf {
+    background: linear-gradient(to top, #F8B869, #F3FF96);
+    border-radius: 10px;
+    position: relative;
+}
+.Voice #knopf::before {
+    border-radius: 8px;
+    content: '';
+    background-image: linear-gradient(to bottom, #F6A23D, #C66601);
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+    position: absolute;
+    z-index: 1;
+}
