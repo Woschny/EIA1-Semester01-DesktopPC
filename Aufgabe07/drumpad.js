@@ -1,3 +1,4 @@
+//Ich hoffe ich habe das richtig verstanden, dass wir nur für 7.1 auf eine Funktion begrenz sind.
 //7.X Aufruf vom Javascript erst nach vollständigem lesen des HTML DOM
 window.addEventListener("load", function () {
     //7.X Variabeln Deklaration
