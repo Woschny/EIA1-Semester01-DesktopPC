@@ -1,10 +1,10 @@
-/* Body Hintergrundfarbe */
+/* 7.X Body Hintergrundfarbe */
 
 body{
 background-color: #000;
 }
 
-/* Positioning Drum Set */
+/* 7.1 Positioning Drum Set */
 
 .platz{
     position: absolute;
@@ -13,7 +13,7 @@ background-color: #000;
     transform: translate(-50%, -50%);
 }
 
-/* Positioning Playbutton */
+/* 7.2 Positioning Playbutton */
 
 #playbutton{
     position: absolute;
@@ -22,7 +22,7 @@ background-color: #000;
     transform: translate(-50%, -50%);
 }
 
-/* Knopf Spacing */
+/* 7.1 Knopf Spacing */
 
 #knopf{
 height: 150px;
@@ -34,7 +34,7 @@ margin: 2px;
 border-style: solid;
 }
 
-/* Style von pinken Knöpfen */
+/* 7.1 Style von pinken Knöpfen */
 
 .Ton #knopf {
     background: linear-gradient(to top, #EE1EB5, #FBAFE3);
@@ -53,7 +53,7 @@ border-style: solid;
     z-index: 1;
 }
 
-/* Style von blauen Knöpfen */
+/* 7.1 Style von blauen Knöpfen */
 
 .Kit #knopf {
     background: linear-gradient(to top, #337FED, #97C4FE);
@@ -72,7 +72,7 @@ border-style: solid;
     z-index: 1;
 }
 
-/* Style von orangenen Knöpfen */
+/* 7.1 Style von orangenen Knöpfen */
 
 .Voice #knopf {
     background: linear-gradient(to top, #F8B869, #F3FF96);
@@ -89,4 +89,12 @@ border-style: solid;
     right: 1px;
     position: absolute;
     z-index: 1;
+}
+
+/*7.X Hover */
+img:hover{
+    opacity: 30%;
+}
+#knopf:hover{
+    opacity: 30%;
 }
