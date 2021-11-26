@@ -91,10 +91,16 @@ border-style: solid;
     z-index: 1;
 }
 
-/*7.X Hover */
+/*7.X Hover und active */
 img:hover{
     opacity: 30%;
 }
 #knopf:hover{
     opacity: 30%;
+}
+#knopf:active{
+    opacity: 3%;
+}
+img:active{
+    opacity: 3%;
 }
