@@ -34,4 +34,16 @@ window.addEventListener("load", function () {
         }, 120);
     }
 });
+/* Das war nur der Versuch mit der For schleife
+
+function playBeat(){
+for (var key=0; key < 5; key++) {
+    var beat:HTMLAudioElement = new Audio(order[key]);
+    beat.play()
+    if (key>order.length)
+    {key = 0;}
+    console.log(key);
+}
+}
+*/ 
 //# sourceMappingURL=drumpad.js.map

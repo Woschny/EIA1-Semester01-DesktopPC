@@ -16,7 +16,7 @@ document.querySelector(".knopf4").addEventListener("click", function () {playSam
 document.querySelector(".knopf5").addEventListener("click", function () {playSample(link[5])});
 document.querySelector(".knopf6").addEventListener("click", function () {playSample(link[6])});
 document.querySelector(".knopf7").addEventListener("click", function () {playSample(link[7])});
-document.querySelector(".knopf8").addEventListener("click", function () {playSample(link[8])});
+document.querySelector(".knopf8").addEventListener("click", function () {playSample(link[8]);});
 
 //7.2 Weitergabe von Array Variabel an Main Funktion beim Click auf Knopf
 document.querySelector(".knopf9").addEventListener("click", playBeat)
@@ -28,9 +28,10 @@ function playSample(tlink:string) {
 }
 
 //Funktion 7.2
+
 function playBeat(){
 setInterval(function() {
-    var beat:HTMLAudioElement = new Audio(order[key]);
+   var beat:HTMLAudioElement = new Audio(order[key]);
     beat.play()
     key++;
     if (key>order.length)
@@ -38,3 +39,17 @@ setInterval(function() {
 },120)}
 
 });
+
+
+/* Das war nur der Versuch mit der For schleife
+
+function playBeat(){
+for (var key=0; key < 5; key++) {
+    var beat:HTMLAudioElement = new Audio(order[key]);
+    beat.play()
+    if (key>order.length)
+    {key = 0;}
+    console.log(key);
+}
+}
+*/
