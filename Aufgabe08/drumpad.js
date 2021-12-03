@@ -19,18 +19,16 @@ window.addEventListener("load", function () {
         return Math.floor(Math.random() * (max + 1));
     }
     //Mixed einen zufälligen Beat bestehend aus den Audiodatein in poss
-    function Remix() {
+    function remix() {
         for (var i = 0; i <= poss.length; i++) {
             recorder.style.color = "white";
             reihenfolge[i] = poss[randomnum(max)];
         }
     }
     //Löscht den Beat
-    function Delete() {
-        while (reihenfolge.length > 0) {
-            recorder.style.color = "white";
-            reihenfolge.pop();
-        }
+    function deleteBeat() {
+        reihenfolge.length = 0;
+        aufnahmeIndex = 0;
     }
     //Sorgt für den Loop und spielt den Beat
     function rythmus() {
@@ -43,7 +41,7 @@ window.addEventListener("load", function () {
         }
     }
     //Macht den Playknopf zum Stoppknopf wenn er gedrückt wurde und Aktiviert die Funktion die den Beat ab spielt bzw. Pausiert 
-    function Beat() {
+    function beatFunktion() {
         if (btn.getAttribute("class") == "fas fa-stop") {
             btn.setAttribute("class", "fas fa-play");
             rythmus();
@@ -78,7 +76,6 @@ window.addEventListener("load", function () {
     function playSample(tlink) {
         var ton = new Audio(tlink);
         ton.play();
-        console.log(reihenfolge);
     }
     //Drumpad Sound + Aufnahme Funktion          
     document.querySelector(".knopf0").addEventListener("click", function () { playSample(link[0]); aufnahme[aufnahmeIndex] = link[0]; aufnahmeIndex++; record(); });
@@ -91,9 +88,9 @@ window.addEventListener("load", function () {
     document.querySelector(".knopf7").addEventListener("click", function () { playSample(link[7]); aufnahme[aufnahmeIndex] = link[7]; aufnahmeIndex++; record(); });
     document.querySelector(".knopf8").addEventListener("click", function () { playSample(link[8]); aufnahme[aufnahmeIndex] = link[8]; aufnahmeIndex++; record(); });
     //Special Keys
-    document.querySelector("#playbutton").addEventListener("click", function () { Beat(); });
-    document.querySelector("#deletebutton").addEventListener("click", function () { Delete(); });
-    document.querySelector("#remix").addEventListener("click", function () { Remix(); });
+    document.querySelector("#playbutton").addEventListener("click", function () { beatFunktion(); });
+    document.querySelector("#deletebutton").addEventListener("click", function () { deleteBeat(); });
+    document.querySelector("#remix").addEventListener("click", function () { remix(); });
     document.querySelector("#record").addEventListener("click", function () { recording(); recordIndex++; });
 });
 //# sourceMappingURL=drumpad.js.map
