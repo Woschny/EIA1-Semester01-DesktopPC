@@ -1,0 +1,131 @@
+/* Body */
+body {
+    background-color: lightgrey;
+    position: absolute;
+    left: 20px;
+    position: absolute;
+    left: 200px;
+    color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*ToDo App Titel */
+h1 {
+    position: absolute;
+    font-size: 50px;
+    left: 150px;
+    font-weight: lighter;
+    color: #333;
+}
+/*x in total */
+h2 {
+    position: absolute;
+    left: 215px;
+    font-size: 22px;
+    font-weight: lighter;
+    top: 100px
+}
+/* Textcontainer die erstellt werden */
+div {
+    background-color: white;
+    margin-bottom: 2px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 220px;
+    position: relative;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 35px;
+    max-height: 2.3rem;
+    min-height: 2.3rem;
+    max-width: 530px;
+    color: #555;
+    box-shadow: 5px 5px 5px grey;
+}
+/* Eingabe Feld */
+.eingabe {
+    background-color: white;
+    margin-top: 200px;
+    padding-right: 300px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    text-decoration: none;
+    margin-left: 60px;
+    font-size: 35px;
+    border: none;
+    color: #555;
+    box-shadow: 5px 5px 5px grey;
+}
+/* Liste allgemein */
+ul, li {
+    text-decoration: none;
+    list-style-type: none;
+
+}
+/* Add Knopf */
+.abgabe {
+    position: absolute;
+    top: 227px;
+    left: 810px;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    border: none;
+    color: #333;
+    background-color: white;
+    opacity: 10%;
+}
+/* Check Knopf */
+.check {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    border: solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 150px;
+    border-width: 2px;
+    border-color: #aaa;
+    color: white;
+    background-color: white;
+    opacity: 100%;
+}
+/* Trash Knopf */
+.trash {
+    position: absolute;
+    top: 25px;
+    left: 750px;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    border: none;
+    color: #333;
+    background-color: white;
+    opacity: 10%;
+}
+/* Add, Trash und Checked Transformation und input outline disabeld */
+.abgabe:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+.trash:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+.check:hover{
+    cursor: pointer;
+    border-color: #333;
+}
+.checked {
+    color: #333;
+}
+input:focus{
+    outline: none;
+}
+/* Trash und Check Elemente (text) Blockieren nicht den eigentlichen Button */
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
