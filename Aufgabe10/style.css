@@ -1,0 +1,140 @@
+/* Body */
+body {
+    background-color: lightgrey;
+    position: absolute;
+    left: 20px;
+    position: absolute;
+    left: 200px;
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*ToDo App Titel */
+h1 {
+    position: absolute;
+    font-size: 50px;
+    left: 150px;
+    font-weight: lighter;
+    color: #333;
+}
+/*x in total */
+h2 {
+    position: absolute;
+    left: 150px;
+    font-size: 22px;
+    font-weight: lighter;
+    top: 100px
+}
+h6 {
+    position: absolute;
+    right: 0;
+}
+.texts {
+    position: absolute;
+    left: 150px;
+    font-size: 22px;
+    font-weight: lighter;
+    top: 133px;
+    color: #111;
+}
+.texts:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(400,end) 1200ms infinite;      
+    animation: ellipsis steps(400,end) 1200ms infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+  }
+  @keyframes ellipsis {
+    to {
+      width: 20px;    
+    }
+  }
+  @-webkit-keyframes ellipsis {
+    to {
+      width: 20px;    
+    }
+  }
+/* Textcontainer die erstellt werden */
+a {
+    position: relative;
+    background-color: white;
+    padding-left: 10px;
+    font-size: 32px;
+    color: #555;
+    box-shadow: 5px 5px 5px grey;
+    pointer-events: none;
+}
+/* Abstand zum linken Bildschirmrand */
+.a1 {
+    margin-left: 60px;
+}
+/* Eingabe Feld */
+.eingabe {
+    background-color: white;
+    margin-top: 200px;
+    margin-bottom: 10px;
+    padding-right: 100px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    margin-left: 60px;
+    font-size: 35px;
+    border: none;
+    color: #555;
+    box-shadow: 5px 5px 5px grey;
+}
+/* Add Knopf */
+.abgabe {
+    position: absolute;
+    top: 227px;
+    right: -15px;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    border: none;
+    color: #555;
+    background-color: white;
+    opacity: 10%;
+}
+/* Add, Trash und Checked Transformation. Input outline disabeld und Farben deklariert*/
+input:focus{
+    outline: none;
+}
+.abgabe:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+.fa-check {
+    pointer-events: all;
+}
+.fa-check:hover {
+    color: #0a0;
+    cursor: pointer;
+}
+.fa-check:active {
+    color: #ededed;
+}
+.fa-trash:active {
+    color: #ededed;
+}
+.fa-trash {
+    opacity: 10%;
+    pointer-events: all;
+    text-align: justify;
+    position: relative;
+    right: 10px;
+    max-width: 150px;
+}
+.fa-trash:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+.grey {
+    color: #ededed;
+}
+.green {
+    color: #0a0;
+    opacity: 100%;
+}
+  
